@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GameBoard">
+        <attr name="boardBackground" format="color|reference" />
+        <attr name="fieldBackground" format="color|reference" />
+        <attr name="boardDimension" format="integer" />
+    </declare-styleable>
+</resources>

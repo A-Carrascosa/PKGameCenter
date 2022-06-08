@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gamecenter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_fondo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GameCenter">
+
+        <activity android:name="com.example.gamecenter.Login.RegistroData.RegistroData" />
+        <activity android:name="com.example.gamecenter.Login.Principal.PrincipalMenu" />
+        <activity android:name="com.example.gamecenter.MainActivity" />
+        <activity android:name="com.example.gamecenter.gc2048.MainActivity2048" />
+        <activity android:name="com.example.gamecenter.PegSolitaire.MainMenuActivityPegSolitaire" />
+        <activity android:name="com.example.gamecenter.PegSolitaire.GameActivityPegSolitaire" />
+        <activity android:name="com.example.gamecenter.gc2048.BoardActivity2048" />
+        <activity android:name="com.example.gamecenter.Score"/>
+        <activity android:name="com.example.gamecenter.Users"/>
+
+        <activity
+            android:name="com.example.gamecenter.SplashActivity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

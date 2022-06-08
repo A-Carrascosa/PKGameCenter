@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PK Game Center</string>
+    <string name="help">Help Screen</string>
+    <string name="menu">Main Menu Screen</string>
+    <string name="splash">Splash Screen</string>
+    <string name="settings">Settings Screen</string>
+    <string name="game">Game Screen</string>
+    <string name="scores">Scores Screen</string>
+
+    <string name="game_2048_name">2048</string>
+    <string name="highScore">High score</string>
+    <string name="play">Play!</string>
+    <string name="score">Score</string>
+    <string name="restart">Restart</string>
+    <string name="preference_key">preference</string>
+    <string name="high_score_key">high score</string>
+
+    <string name="game_peg_solitaire_name">Peg Solitaire</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_main_menu">Peg Solitaire</string>
+    <string name="button_play_text">Play</string>
+
+    <string name="button_finish_text">Finish Game</string>
+    <string name="textview_score_text">32</string>
+</resources>
