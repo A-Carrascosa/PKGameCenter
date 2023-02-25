@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PK GameCenter</string>
+    <string name="title_2048">2048</string>
+    <string name="lights_out">Lights out</string>
+    <string name="grid">Grid</string>
+    <string name="_0">0</string>
+    <string name="too_short">Movimiento demasiado corto</string>
+    <string name="skipped_diagonal">Diagonal omitida</string>
+    <string name="score">Score</string>
+    <string name="best">Best</string>
+    <string name="undo_movement">Undo movement</string>
+    <string name="restart">Restart</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="view_solution">View solution</string>
+    <string name="touchments">Touchments</string>
+    <string name="restant_touchments">Restant touchments</string>
+    <string name="guest">Guest</string>
+    <string name="user">User</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="log_out">Log out</string>
+    <string name="settings">Settings</string>
+    <string name="pk_game_center">PK Game Center</string>
+    <string name="_3x3"> 3x3</string>
+    <string name="_4x4"> 4x4</string>
+    <string name="_5x5"> 5x5</string>
+    <string name="apply">Apply</string>
+    <string name="grid_size">Grid size</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="new_nickname">New nickname</string>
+    <string name="nickname">Nickname</string>
+    <string name="mode">Mode</string>
+    <string name="search">Search</string>
+    <string name="game_won">You have won!</string>
+    <string name="game_lose">You have lost!</string>
+    <string name="game_center">Game Center</string>
+    <string name="cheat_mode">Cheat mode </string>
+</resources>

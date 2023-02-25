@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GCLightsOut">
+
+    <TextView
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/grid_LO"
+        android:layout_alignStart="@id/grid_LO"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/scores_LO"
+        android:lines="2"
+        android:text="@string/lights_out" />
+
+
+    <LinearLayout
+        android:id="@+id/scores_LO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/grid_LO"
+        android:layout_alignEnd="@id/grid_LO"
+        android:layout_alignParentTop="true"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/info"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/scores_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/touchments" />
+
+            <TextView
+                android:id="@+id/touchments"
+                style="@style/scores_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="@string/_0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/info"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/scores_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/restant_touchments" />
+
+            <TextView
+                android:id="@+id/restant_touchments"
+                style="@style/scores_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="@string/_0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/grid_LO_background"
+        android:layout_width="@dimen/grid"
+        android:layout_height="@dimen/grid"
+        android:layout_centerInParent="true"
+        android:background="@drawable/grid_container"
+        android:columnCount="5"
+        android:gravity="center"
+        android:padding="5dp"
+        android:rowCount="5">
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+        <TextView
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_off"
+            android:text="" />
+
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/grid_LO"
+        android:layout_width="@dimen/grid"
+        android:layout_height="@dimen/grid"
+        android:layout_centerInParent="true"
+        android:columnCount="5"
+        android:gravity="center"
+        android:padding="5dp"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/bt00"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on" />
+
+        <TextView
+            android:id="@+id/bt01"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt02"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt03"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt04"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt10"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt11"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt12"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt13"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt14"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt20"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt21"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt22"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt23"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt24"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt30"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt31"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt32"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt33"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt34"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt40"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt41"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt42"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt43"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/bt44"
+            style="@style/light_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/light_on"
+            android:text="" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="@dimen/grid"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid_LO"
+        android:layout_alignStart="@id/grid_LO"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/grid_LO"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/view_solution"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_background"
+            android:text="@string/view_solution"
+            app:icon="@drawable/ic_remove_red_eye"
+            android:textColor="@color/button_text"
+            app:iconTint="@color/button_text"  />
+
+        <Button
+            android:id="@+id/restart_LO"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="@string/restart"
+            android:backgroundTint="@color/button_background"
+            app:icon="@drawable/ic_refresh"
+            android:textColor="@color/button_text"
+            app:iconTint="@color/button_text" />
+
+    </LinearLayout>
+
+</RelativeLayout>

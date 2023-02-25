@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GameCenter" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/venetian_red</item>
+        <item name="colorPrimaryVariant">@color/nickel</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_chocolate</item>
+        <item name="colorSecondaryVariant">@color/light_gray</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#4DC20114</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">#5b6262</item>
+    </style>
+
+    <style name="light_cell" parent="cell">
+        <item name="android:textColor">@color/black_chocolate</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textColor">@color/black_chocolate</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">13sp</item>
+        <item name="autoSizeMaxTextSize">65sp</item>
+    </style>
+
+    <style name="scoreboard_title" parent="@style/TextAppearance.AppCompat.Display1">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_chocolate</item>
+    </style>
+
+    <style name="scores_title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">10sp</item>
+        <item name="autoSizeMaxTextSize">17sp</item>
+    </style>
+
+    <style name="scores_numbers">
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">13sp</item>
+        <item name="autoSizeMaxTextSize">50sp</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="buttons">
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">10sp</item>
+        <item name="autoSizeMaxTextSize">14sp</item>
+    </style>
+
+    <style name="buttons_scoreboard">
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">10sp</item>
+        <item name="autoSizeMaxTextSize">17sp</item>
+    </style>
+
+    <style name="scoreboard_item">
+        <item name="android:textColor">@color/black_chocolate</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Large" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/black_chocolate</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/venetian_red</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f</item>
+
+        <item name="android:textColor">@color/black_chocolate</item>
+    </style>
+
+</resources>

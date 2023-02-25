@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scoreboard">
+
+    <TextView
+        android:id="@+id/title_scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scoreboard"
+        android:layout_margin="15dp"
+        style="@style/scoreboard_title"/>
+
+    <Button
+        android:id="@+id/search_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tabletitles"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:text="@string/search"
+        app:icon="@drawable/ic_search" />
+
+    <LinearLayout
+        android:id="@+id/tabletitles"
+        android:layout_below="@id/title_scoreboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bnick"
+            style="@style/buttons_scoreboard"
+            android:background="@drawable/rectangle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/nickname"
+            app:iconGravity="end" />
+
+        <Button
+            android:id="@+id/bmode"
+            style="@style/buttons_scoreboard"
+            android:background="@drawable/rectangle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/mode"
+            app:iconGravity="end" />
+
+        <Button
+            android:id="@+id/bscore"
+            style="@style/buttons_scoreboard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/score"
+            app:iconGravity="end"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scorelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabletitles"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/clear_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_clear_search"
+        app:tint="@color/ghost_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/venetian_red"
+        />
+
+</RelativeLayout>

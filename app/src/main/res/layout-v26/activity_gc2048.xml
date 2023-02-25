@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GC2048">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/title_2048"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/grid_2048"
+            android:layout_alignStart="@id/grid_2048"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@id/scores_2048"
+            android:lines="1"
+            android:text="@string/title_2048" />
+
+        <LinearLayout
+            android:id="@+id/scores_2048"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/grid_2048"
+            android:layout_alignEnd="@id/grid_2048"
+            android:layout_alignParentTop="true"
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/info"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/scores_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score" />
+
+                <TextView
+                    android:id="@+id/actual_score"
+                    style="@style/scores_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/_0"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/info"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/scores_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/best" />
+
+                <TextView
+                    android:id="@+id/best_score"
+                    style="@style/scores_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/_0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- BACKGROUND GRID -->
+        <GridLayout
+            android:id="@+id/grid_2048_background"
+            android:layout_width="@dimen/grid"
+            android:layout_height="@dimen/grid"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/grid_container"
+            android:columnCount="4"
+            android:gravity="center"
+            android:padding="5dp"
+            android:rowCount="4"/>
+
+        <!-- GAME GRID -->
+        <GridLayout
+            android:id="@+id/grid_2048"
+            android:layout_width="@dimen/grid"
+            android:layout_height="@dimen/grid"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="@dimen/grid"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grid_2048"
+            android:layout_alignStart="@id/grid_2048"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/grid_2048"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    style="@style/buttons"
+                    android:lines="2"
+                    android:id="@+id/undo"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/button_background"
+                    android:enabled="false"
+                    android:text="@string/undo_movement"
+                    android:textColor="@color/button_text"
+                    app:icon="@drawable/ic_arrow_back"
+                    app:iconTint="@color/button_text" />
+
+                <Button
+                    style="@style/buttons"
+                    android:id="@+id/restart"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/restart"
+                    app:icon="@drawable/ic_refresh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    style="@style/buttons"
+                    android:id="@+id/settings2048"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/settings"
+                    app:icon="@drawable/ic_settings" />
+
+                <Button
+                    style="@style/buttons"
+                    android:id="@+id/scoreboard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/scoreboard"
+                    app:icon="@drawable/ic_score" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
